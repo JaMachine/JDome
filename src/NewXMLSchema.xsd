@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.jamachine.com/ja"
+	xmlns:tns="http://www.jamachine.com/ja">
+
+	<element name="allTarifs">
+		<complexType>
+			<sequence>
+				<element name="tarif" type="tns:tariftype" minOccurs="0"
+					maxOccurs="unbounded">
+				</element>
+			</sequence>
+		</complexType>
+	</element>
+	<complexType name="tariftype">
+		<sequence>
+			<element name="name" type="string" minOccurs="0" maxOccurs="55"></element>
+			<element name="operatorName" type="string" minOccurs="0"
+				maxOccurs="55"></element>
+			<element name="payrol" type="integer" minOccurs="0"
+				maxOccurs="unbounded"></element>
+			<element name="callPrices" type="tns:callPrices">
+			</element>
+			<element name="sms" type="integer" minOccurs="0" maxOccurs="unbounded"></element>
+			<element name="parametrs" type="tns:parametrs"></element>
+
+		</sequence>
+	</complexType>
+	<complexType name="callPrices">
+		<sequence>
+			<element name="inside" type="integer" minOccurs="0"
+				maxOccurs="unbounded"></element>
+			<element name="outcide" type="integer" minOccurs="0"
+				maxOccurs="unbounded"></element>
+			<element name="city" type="integer" minOccurs="0" maxOccurs="unbounded"></element>
+		</sequence>
+	</complexType>
+	<complexType name="parametrs">
+		<sequence>
+			<element name="favoriteNumbers" type="integer" minOccurs="0"
+				maxOccurs="unbounded"></element>
+			<element name="tarification" type="integer" minOccurs="1"
+				maxOccurs="12"></element>
+			<element name="conectionPrice" type="integer" minOccurs="0"
+				maxOccurs="unbounded"></element>
+		</sequence>
+	</complexType>
+</schema>

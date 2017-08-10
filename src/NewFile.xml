@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:allTarifs xmlns:tns="http://www.jamachine.com/ja"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.jamachine.com/ja NewXMLSchema.xsd">
+	<tarif>
+		<name>free</name>
+		<operatorName>Best Mobil</operatorName>
+		<payrol>0</payrol>
+		<callPrices>
+			<inside>0</inside>
+			<outcide>15</outcide>
+			<city>20</city>
+		</callPrices>
+		<sms>1</sms>
+		<parametrs>
+			<favoriteNumbers>5</favoriteNumbers>
+			<tarification>1</tarification>
+			<conectionPrice>1</conectionPrice>
+		</parametrs>
+	</tarif>
+	<tarif>
+		<name>expensive</name>
+		<operatorName>kyivstar</operatorName>
+		<payrol>55</payrol>
+		<callPrices>
+			<inside>0</inside>
+			<outcide>25</outcide>
+			<city>25</city>
+		</callPrices>
+		<sms>5</sms>
+		<parametrs>
+			<favoriteNumbers>10</favoriteNumbers>
+			<tarification>1</tarification>
+			<conectionPrice>2</conectionPrice>
+		</parametrs>
+	</tarif>
+</tns:allTarifs>
